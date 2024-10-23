@@ -10,3 +10,5 @@ My personal configs...
 - hyprpaper
 - swaylock
 - kitty
+- grim
+- slurp
