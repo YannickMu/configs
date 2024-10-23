@@ -9,3 +9,4 @@ My personal configs...
 - hyprland
 - hyprpaper
 - swaylock
+- kitty
