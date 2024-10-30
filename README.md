@@ -8,7 +8,7 @@ My personal configs...
 - waybar
 - hyprland
 - hyprpaper
-- swaylock
+- swaylock-animation
 - kitty
 - grim
 - slurp
