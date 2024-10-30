@@ -12,3 +12,4 @@ My personal configs...
 - kitty
 - grim
 - slurp
+- thunar
