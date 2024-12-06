@@ -13,7 +13,7 @@ set tabstop=2
 set shiftwidth=2
 set noexpandtab
 set hlsearch
-set listchars=space:·,tab:‣\ ,trail:█
+set listchars=space:·,tab:‣\ ,trail:█,eol:󰌑
 set fillchars+=vert:\
 set cursorline
 set t_Co=256
@@ -42,6 +42,7 @@ hi CursorColumn ctermbg=59
 hi CursorColumn ctermfg=46
 hi Comment ctermfg=245 cterm=Italic
 hi SpecialKey ctermfg=245
+hi NonText ctermfg=245
 hi Function ctermfg=199
 hi Special ctermfg=91
 
@@ -66,7 +67,7 @@ nmap gp :%!prettier --use-tabs --stdin-filepath %<CR>
 noremap <BS><BS> :-tabnext<CR>
 noremap <CR><CR> :tabnext<CR>
 noremap <c-a> :set list!<CR>
-nnoremap <esc><esc> :silent! nohls<cr>
+nnoremap <esc><esc> :set hls!<cr>
 nnoremap <c-s> :w<CR>
 inoremap <c-s> <esc>:w<CR>a
 inoremap <c-x> <esc>:wq<CR>
@@ -74,7 +75,7 @@ tmap <c-p> <c-w>:call Toggle()<CR>
 nmap <c-p> :call Toggle()<CR>
 
 "Statusline
-set statusline=%#SL_FileType#\ %Y%#SL_Inset#%#SL_Inset#\ %f\ %#SL_Inset#%#SL_Upset#%=%#SL_Inset#%#SL_Inset#\ %L\ %#SL_Inset#%#SL_Inset#\ %c\ %#SL_Inset#%#SL_Inset#\ chr:\ 0x%B\ %#SL_Inset#%#SL_FileType#\ %{&modified?'+':'\ '}\ 
+set statusline=%#SL_FileType#\ %Y%#SL_Inset#%#SL_Inset#\ %f\ %#SL_Inset#%#SL_FileType#\ %{&encoding}%#SL_Upset#%=%#SL_Inset#%#SL_Inset#\ %L\ %#SL_Inset#%#SL_Inset#\ %c\ %#SL_Inset#%#SL_Inset#\ chr:\ 0x%B\ %#SL_Inset#%#SL_Inset#\ %{&ff=='unix'?'\ LF\ ':'CRLF'}\ %#SL_Inset#%#SL_FileType#\ %{&modified?'+':'\ '}\ 
 set laststatus=2
 
 hi SL_FileType ctermbg=197 ctermfg=0
