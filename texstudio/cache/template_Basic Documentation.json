@@ -1,0 +1,43 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/home/smuely/Dokumente/LaTeX/Schule/Module/346/PII/template_Basic Documentation.tex",
+    "labels": [
+    ],
+    "modified": "Wed Nov 6 17:36:07 2024",
+    "packages": [
+        "#graphicx",
+        "T1#fontenc",
+        "utf8#inputenc",
+        "a4paper,11pt#latex-document",
+        "a4paper,11pt#tex",
+        "german#babel",
+        "#fancyhdr"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Lernziele#26",
+        "3#Cloud#27",
+        "3#Workloads#36",
+        "3#Ökonomische Aspekte#41",
+        "3#Rechtliche Aspekte, Compliance#53",
+        "3#Sicherheitsaspekte#62",
+        "2#Cloud#73",
+        "3#Essential Characteristics#74"
+    ],
+    "usercommands": [
+        [
+            "\\thisTitle",
+            "\\thisTitle"
+        ],
+        [
+            "\\thisAuthor",
+            "\\thisAuthor"
+        ]
+    ]
+}

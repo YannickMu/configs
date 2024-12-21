@@ -1,0 +1,11 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/Dokumente/Projekte/JAVA" value="true" />
+        <entry key="$USER_HOME$/Dokumente/Projekte/SpringBoot" value="true" />
+        <entry key="$USER_HOME$/IdeaProjects/JAVA" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

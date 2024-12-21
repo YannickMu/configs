@@ -1,0 +1,57 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Dokumente/Projekte/JAVA">
+          <value>
+            <RecentProjectMetaInfo frameTitle="JAVA" projectWorkspaceId="2oinbJEURait5JgKYmwOUziBbWA">
+              <option name="activationTimestamp" value="1731361373610" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-242.23726.103" />
+              <option name="buildTimestamp" value="1730668260000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <frame x="9" y="45" width="1902" height="1026" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1731361333693" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/JAVA">
+          <value>
+            <RecentProjectMetaInfo frameTitle="JAVA – Main.java" projectWorkspaceId="2oing4ND5enfVqCgSeY0A7IMfHy">
+              <option name="activationTimestamp" value="1731362383112" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-242.23726.103" />
+              <option name="buildTimestamp" value="1730668260000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="6" />
+              </option>
+              <frame x="9" y="45" width="1902" height="1026" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1731361373949" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Dokumente/Projekte/SpringBoot">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="2oipjHEPEZlSxN1CTenCmR3wB7M">
+              <option name="activationTimestamp" value="1731442767101" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-242.23726.103" />
+              <option name="buildTimestamp" value="1730668260000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1731362383324" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/Dokumente/Projekte/SpringBoot" />
+    <option name="lastProjectLocation" value="$USER_HOME$/Dokumente/Projekte" />
+  </component>
+</application>

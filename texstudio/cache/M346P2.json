@@ -1,0 +1,57 @@
+{
+    "bibitems": [
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/home/smuely/Dokumente/LaTeX/Schule/Module/346/PII/M346P2.tex",
+    "labels": [
+    ],
+    "modified": "Wed Nov 6 18:09:35 2024",
+    "packages": [
+        "T1#fontenc",
+        "#graphicx",
+        "#fancyhdr",
+        "german#babel",
+        "a4paper,11pt#latex-document",
+        "a4paper,11pt#tex",
+        "utf8#inputenc"
+    ],
+    "refs": [
+    ],
+    "toc": [
+        "2#Lernziele#26",
+        "3#Cloud#27",
+        "3#Workloads#36",
+        "3#Ökonomische Aspekte#41",
+        "3#Rechtliche Aspekte, Compliance#53",
+        "3#Sicherheitsaspekte#62",
+        "2#Cloud#73",
+        "3#Essential Characteristics#74",
+        "4#Skalierbarkeit#76",
+        "4#Kostenersparnis#78",
+        "4#Zugänglichkeit und Mobilität#80",
+        "4#Wartung und Updates#82",
+        "4#Sicherheit und Zuverlässigkeit#84",
+        "3#NIST#88",
+        "4#Private Cloud#89",
+        "4#Public Cloud#91",
+        "4#Community Cloud#93",
+        "4#Hybrid Cloud#96",
+        "3#Servicemodelle#99",
+        "4#SaaS#100",
+        "4#PaaS#102",
+        "4#IaaS#104"
+    ],
+    "usercommands": [
+        [
+            "\\thisTitle",
+            "\\thisTitle"
+        ],
+        [
+            "\\thisAuthor",
+            "\\thisAuthor"
+        ]
+    ]
+}

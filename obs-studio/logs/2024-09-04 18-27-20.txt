@@ -1,0 +1,127 @@
+18:27:20.213: Platform: Wayland
+18:27:20.213: CPU Name: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+18:27:20.213: CPU Speed: 1282.259MHz
+18:27:20.213: Physical Cores: 4, Logical Cores: 8
+18:27:20.213: Physical Memory: 7626MB Total, 4806MB Free
+18:27:20.213: Kernel Version: Linux 6.10.7-arch1-1
+18:27:20.213: Distribution: "Arch Linux" Unknown
+18:27:20.213: Desktop Environment: Hyprland
+18:27:20.213: Session Type: wayland
+18:27:20.216: Qt Version: 6.7.2 (runtime), 6.7.2 (compiled)
+18:27:20.216: Portable mode: false
+18:27:20.279: OBS 30.2.1-1 (linux)
+18:27:20.279: ---------------------------------
+18:27:20.280: ---------------------------------
+18:27:20.280: audio settings reset:
+18:27:20.280: 	samples per sec: 48000
+18:27:20.280: 	speakers:        2
+18:27:20.280: 	max buffering:   960 milliseconds
+18:27:20.280: 	buffering type:  dynamically increasing
+18:27:20.286: ---------------------------------
+18:27:20.286: Initializing OpenGL...
+18:27:20.286: Using EGL/Wayland
+18:27:20.310: Initialized EGL 1.5
+18:27:20.321: Loading up OpenGL on adapter Intel Mesa Intel(R) Xe Graphics (TGL GT2)
+18:27:20.321: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.2.1-arch1.1, shading language 4.60
+18:27:20.351: ---------------------------------
+18:27:20.351: video settings reset:
+18:27:20.351: 	base resolution:   1920x1080
+18:27:20.351: 	output resolution: 1280x720
+18:27:20.351: 	downscale filter:  Bicubic
+18:27:20.351: 	fps:               60/1
+18:27:20.351: 	format:            NV12
+18:27:20.351: 	YUV mode:          Rec. 709/Partial
+18:27:20.351: NV12 texture support enabled
+18:27:20.351: P010 texture support not available
+18:27:20.356: Audio monitoring device:
+18:27:20.356: 	name: Default
+18:27:20.356: 	id: default
+18:27:20.357: ---------------------------------
+18:27:20.364: Failed to load 'en-US' text for module: 'decklink-captions.so'
+18:27:20.370: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+18:27:20.377: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+18:27:20.377: Failed to initialize module 'decklink.so'
+18:27:20.535: [pipewire] Available capture sources:
+18:27:20.535: [pipewire]     - Monitor source
+18:27:20.553: v4l2loopback not installed, virtual camera not registered
+18:27:20.623: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+18:27:20.623: FFmpeg VAAPI H264 encoding not supported
+18:27:20.623: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+18:27:20.623: FFmpeg VAAPI AV1 encoding not supported
+18:27:20.623: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+18:27:20.623: FFmpeg VAAPI HEVC encoding not supported
+18:27:20.633: os_dlopen(/usr/lib/obs-plugins/obs-libfdk.so->/usr/lib/obs-plugins/obs-libfdk.so): libfdk-aac.so.2: Kann die Shared-Object-Datei nicht öffnen: Datei oder Verzeichnis nicht gefunden
+18:27:20.633: 
+18:27:20.635: os_dlopen(/usr/lib/obs-plugins/obs-libfdk.so->/usr/lib/obs-plugins/obs-libfdk.so): libfdk-aac.so.2: Kann die Shared-Object-Datei nicht öffnen: Datei oder Verzeichnis nicht gefunden
+18:27:20.635: 
+18:27:20.635: Module '/usr/lib/obs-plugins/obs-libfdk.so' not loaded
+18:27:20.748: ---------------------------------
+18:27:20.748:   Loaded Modules:
+18:27:20.748:     text-freetype2.so
+18:27:20.748:     rtmp-services.so
+18:27:20.748:     obs-x264.so
+18:27:20.748:     obs-webrtc.so
+18:27:20.748:     obs-vst.so
+18:27:20.748:     obs-transitions.so
+18:27:20.748:     obs-qsv11.so
+18:27:20.748:     obs-outputs.so
+18:27:20.748:     obs-filters.so
+18:27:20.748:     obs-ffmpeg.so
+18:27:20.748:     linux-v4l2.so
+18:27:20.748:     linux-pulseaudio.so
+18:27:20.748:     linux-pipewire.so
+18:27:20.748:     linux-jack.so
+18:27:20.748:     linux-capture.so
+18:27:20.748:     linux-alsa.so
+18:27:20.748:     image-source.so
+18:27:20.748:     frontend-tools.so
+18:27:20.748:     decklink-output-ui.so
+18:27:20.748:     decklink-captions.so
+18:27:20.748: ---------------------------------
+18:27:20.749: ---------------------------------
+18:27:20.749: Available Encoders:
+18:27:20.749:   Video Encoders:
+18:27:20.749: 	- ffmpeg_svt_av1 (SVT-AV1)
+18:27:20.749: 	- ffmpeg_aom_av1 (AOM AV1)
+18:27:20.749: 	- obs_x264 (x264)
+18:27:20.749:   Audio Encoders:
+18:27:20.749: 	- ffmpeg_aac (FFmpeg AAC)
+18:27:20.749: 	- ffmpeg_opus (FFmpeg Opus)
+18:27:20.749: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16 Bit))
+18:27:20.749: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24 Bit))
+18:27:20.749: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32 Bit Float))
+18:27:20.749: 	- ffmpeg_alac (FFmpeg ALAC (24 Bit))
+18:27:20.749: 	- ffmpeg_flac (FFmpeg FLAC (16 Bit))
+18:27:20.749: ==== Startup complete ===============================================
+18:27:20.796: All scene data cleared
+18:27:20.796: ------------------------------------------------
+18:27:20.798: PipeWire initialized
+18:27:20.800: Switched to scene 'Scene'
+18:27:20.800: ------------------------------------------------
+18:27:20.800: Loaded scenes:
+18:27:20.800: - scene 'Scene':
+18:27:20.800:     - source: 'Bildschirm' (pipewire-screen-capture-source)
+18:27:20.800: ------------------------------------------------
+18:27:20.877: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+18:27:20.885: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+18:27:20.899: [pipewire] Screencast session created
+18:27:20.909: [pipewire] Asking for monitor and window
+18:27:20.925: [pipewire] source selected, setting up screencast
+18:27:20.929: [pipewire] Server version: 1.2.3
+18:27:20.929: [pipewire] Library version: 1.2.3
+18:27:20.929: [pipewire] Header version: 1.2.1
+18:27:20.929: [pipewire] Created stream 0x634e7b952530
+18:27:20.929: [pipewire] Stream 0x634e7b952530 state: "connecting" (error: none)
+18:27:20.929: [pipewire] Playing stream 0x634e7b952530
+18:27:20.929: [pipewire] Stream 0x634e7b952530 state: "paused" (error: none)
+18:27:20.932: [pipewire] Negotiated format:
+18:27:20.932: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:27:20.932: [pipewire]     Modifier: 0x0
+18:27:20.932: [pipewire]     Size: 1920x1080
+18:27:20.932: [pipewire]     Framerate: 0/1
+18:27:20.933: [pipewire] Negotiated format:
+18:27:20.933: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+18:27:20.933: [pipewire]     Modifier: 0x100000000000008
+18:27:20.933: [pipewire]     Size: 1920x1080
+18:27:20.933: [pipewire]     Framerate: 0/1
+18:27:20.958: [pipewire] Stream 0x634e7b952530 state: "streaming" (error: none)

@@ -1,0 +1,139 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Delete">
+      <i c="2" l="1731363645963" />
+    </e>
+    <e n="$Undo">
+      <i c="1" l="1731361577243" />
+    </e>
+    <e n="ChangeKeymap">
+      <i c="1" l="1731361503680" />
+    </e>
+    <e n="ChangeLaf">
+      <i c="1" l="1731361621072" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="127" l="1731364503734" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="2" l="1731364142976" />
+    </e>
+    <e n="EditorDown">
+      <i c="7" l="1731361534205" />
+    </e>
+    <e n="EditorEnter">
+      <i c="24" l="1731364492286" />
+    </e>
+    <e n="EditorLeft">
+      <i c="15" l="1731364504554" />
+    </e>
+    <e n="EditorPaste">
+      <i c="5" l="1731364495137" />
+    </e>
+    <e n="EditorRight">
+      <i c="2" l="1731364186587" />
+    </e>
+    <e n="EditorTab">
+      <i c="3" l="1731362710614" />
+    </e>
+    <e n="EditorUp">
+      <i c="3" l="1731362634159" />
+    </e>
+    <e n="ExternalSystem.RefreshProject">
+      <i c="1" l="1731363516922" />
+    </e>
+    <e n="ExternalSystem.RunTask">
+      <i c="12" l="1731364515464" />
+    </e>
+    <e n="FindInPath">
+      <i c="1" l="1731362697490" />
+    </e>
+    <e n="MTDeepOceanTheme">
+      <i c="1" l="1731361835842" />
+    </e>
+    <e n="MaterialTheme.Menu">
+      <i c="1" l="1731361824801" />
+    </e>
+    <e n="MoreRunToolbarActions">
+      <i c="1" l="1731361412224" />
+    </e>
+    <e n="NewClass">
+      <i c="2" l="1731362579707" />
+    </e>
+    <e n="NewFile">
+      <i c="1" l="1731363626407" />
+    </e>
+    <e n="NewForm">
+      <i c="1" l="1731362109296" />
+    </e>
+    <e n="NewProject">
+      <i c="2" l="1731362193030" />
+    </e>
+    <e n="OpenFile">
+      <i c="2" l="1731362365245" />
+    </e>
+    <e n="QuickImplementations">
+      <i c="1" l="1731361897665" />
+    </e>
+    <e n="RedesignedRunConfigurationSelector">
+      <i c="1" l="1731362041632" />
+    </e>
+    <e n="Run">
+      <i c="3" l="1731362083358" />
+    </e>
+    <e n="SaveAll">
+      <i c="13" l="1731364512571" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="12" l="1731363831006" />
+    </e>
+    <e n="ShowReformatFileDialog">
+      <i c="4" l="1731364560159" />
+    </e>
+    <e n="ShowSettings">
+      <i c="5" l="1731363672174" />
+    </e>
+    <e n="SynchronizeCurrentFile">
+      <i c="1" l="1731363464871" />
+    </e>
+    <e n="Terminal.NewTab">
+      <i c="7" l="1731364098702" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1731361320913" />
+    </e>
+    <e n="WelcomeScreen.Plugins">
+      <i c="4" l="1731363832014" />
+    </e>
+    <e n="com.intellij.ide.actions.QuickChangeLookAndFeel$1">
+      <i c="1" l="1731361629517" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.impl.MoreActionGroup">
+      <i c="1" l="1731362642119" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="1" l="1731364124606" />
+    </e>
+    <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$AddKeyboardShortcutAction">
+      <i c="1" l="1731361902169" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="12" l="1731364519947" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="4" l="1731363747660" />
+    </e>
+    <e n="com.intellij.ui.components.BasicOptionButtonUI$ActionDelegate">
+      <i c="2" l="1731361778511" />
+    </e>
+    <e n="com.mallowigi.idea.notifications.MTStatisticsNotification$2">
+      <i c="1" l="1731362397169" />
+    </e>
+    <e n="editRunConfigurations">
+      <i c="1" l="1731362043187" />
+    </e>
+    <e n="org.jetbrains.plugins.terminal.action.EnableBlockTerminalUiAction">
+      <i c="2" l="1731363741500" />
+    </e>
+  </component>
+</application>
