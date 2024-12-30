@@ -5,7 +5,7 @@
     // "width": 1366, // Waybar width
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/mode", "custom/spotify"],
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["custom/window"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray", "clock"],
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -84,4 +84,9 @@
         "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
         "exec-if": "pgrep spotify"
     },
+    "custom/window": {
+        "exec": "$HOME/.config/waybar/getTitle.sh 2> /dev/null",
+        "interval": 1,
+        "format": "{}"
+    }
 }
