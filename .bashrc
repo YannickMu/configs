@@ -1,3 +1,5 @@
+umask 0027
+
 export LANG="en_SG.UTF-8"
 export LC_TIME="de_CH.UTF-8"
 export LC_TELEPHONE="de_CH.UTF-8"
