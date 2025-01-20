@@ -7,9 +7,17 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+	"assistant": {
+		"default_model": {
+			"provider": "openai",
+			"model": "gpt-4o"
+		},
+		"version": "2"
+	},
 	"features": {
 		"inline_completion_provider": "none"
 	},
+	"vim_mode": true,
 	"ui_font_size": 16,
 	"buffer_font_size": 16,
 	"theme": {
@@ -20,24 +28,22 @@
 	"hard_tabs": true,
 	"show_whitespaces": "all",
 	"ui_font_family": "FiraCode Nerd Font",
-	"buffer_font_family": "FiraCode Nerd Font",
-	"vim_mode": true,
+	"buffer_font_family": "FiraCode Nerd Font Mono",
 	"search": {
 		"regex": true
 	},
-	// for transparent look
 	"experimental.theme_overrides": {
 		"background.appearance": "blurred",
-		"background": "#10101040",
-		"editor.background": "#10101040",
-		"panel.background": "#10101040",
-		"status_bar.background": "#10101040",
-		"title_bar.background": "#10101040",
-		"tab_bar.background": "#10101040",
+		"background": "#10101060",
+		"editor.background": "#10101060",
+		"panel.background": "#10101060",
+		"status_bar.background": "#10101060",
+		"title_bar.background": "#10101060",
+		"tab_bar.background": "#10101060",
 		"tab.active_background": "#55555540",
-		"tab.inactive_background": "#10101040",
-		"toolbar.background": "#10101040",
-		"editor.gutter.background": "#10101040",
+		"tab.inactive_background": "#10101060",
+		"toolbar.background": "#10101060",
+		"editor.gutter.background": "#10101060",
 		"terminal.background": "#10101060"
 	}
 }
