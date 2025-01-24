@@ -13,3 +13,5 @@ My personal configs...
 - grim
 - slurp
 - thunar
+- zed
+- FiraCode Nerd Font

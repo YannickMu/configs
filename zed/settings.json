@@ -29,6 +29,9 @@
 	"show_whitespaces": "all",
 	"ui_font_family": "FiraCode Nerd Font",
 	"buffer_font_family": "FiraCode Nerd Font Mono",
+	"terminal": {
+		"font_family": "FiraCode Nerd Font Mono"
+	},
 	"search": {
 		"regex": true
 	},
