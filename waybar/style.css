@@ -1,76 +1,188 @@
+@define-color fg #ebdbb2;
+@define-color bg #1d2021;
+
+@define-color black #282828;
+@define-color red #cc241d;
+@define-color green #b8bb26;
+@define-color yellow #fabd2f;
+@define-color blue #83a598;
+@define-color purple #d3869b;
+@define-color aqua #8ec07c;
+@define-color orange #fe8019;
+
 * {
-    border: none;
-    border-radius: 0;
-    font-family: 'FiraCode Nerd Font Mono Retina';
-    font-size: 13px;
-    min-height: 0;
+	all: unset;
+	font-family: FiraCode Nerd Font;
+	font-size: 15px;
+}
+
+.modules-left {
+	background: @bg;
+	padding: 0 10px;
+	border-radius: 0 8px 8px 0;
+}
+
+.modules-right {
+	background: @bg;
+	font-weight: bold;
+	padding: 0 10px;
+	border-radius: 8px 0 0 8px;
+}
+
+.modules-center {
+	color: @fg;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-weight: 500;
+	margin: 0 8px;
+	padding: 0 10px;
+	border-radius: 8px;
+}
+
+tooltip {
+	color: @fg;
+	background: @bg;
+}
+
+#backlight {
+	color: @purple;
+}
+
+#battery {
+	color: @green;
+}
+
+#clock.date {
+	color: @yellow;
+}
+
+#clock.time {
+	color: @orange;
+}
+
+#custom-launcher {
+	color: @red;
+	margin: 0 6px 0 0;
+}
+
+#mpris {
+	color: @green;
+	font-weight: 600;
+}
+
+#network {
+	color: @blue;
+}
+
+#pulseaudio {
+	color: @aqua;
+}
+
+#workspaces {
+	color: @fg;
+	font-weight: bold;
+	margin: 0 -4px;
+}
+
+#workspaces button {
+	margin: 0 4px;
+}
+
+#workspaces button.active {
+	color: @orange;
+}
+
+#workspaces button:hover {
+	color: @yellow;
+}
+
+/*
+* {
+	border: none;
+	border-radius: 0;
+	font-family: "FiraCode Nerd Font Retina";
+	font-size: 13px;
+	min-height: 25px;
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,0.5);
-    color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
 }
 
 #window {
-    font-weight: bold;
-    font-family: "Ubuntu";
+	font-weight: bold;
 }
-/*
+
 #workspaces {
-    padding: 0 5px;
+	margin: 2px;
+	padding: 1px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 999em 999em 999em 999em;
 }
-*/
 
 #workspaces button {
-    padding: 0 5px;
-    background: transparent;
-    color: white;
-    border-top: 2px solid transparent;
+	padding: 0 5px;
+	color: white;
+	border-top: 2px solid transparent;
+	border-radius: 50%;
 }
 
 #workspaces button.focused {
-    color: #c9545d;
-    border-top: 2px solid #c9545d;
+	color: #c9545d;
+	border-top: 2px solid #c9545d;
+}
+
+#workspaces button.active {
+	background-color: rgba(100, 255, 100, 0.2);
 }
 
 #mode {
-    background: #64727D;
-    border-bottom: 3px solid white;
+	background: #64727d;
+	border-bottom: 3px solid white;
 }
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
-    padding: 0 3px;
-    margin: 0 2px;
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#custom-nc,
+#custom-power,
+#mode {
+	padding: 0 5px;
+	margin: 0 2px;
 }
 
 #clock {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 #battery {
 }
 
 #battery icon {
-    color: red;
+	color: red;
 }
 
 #battery.charging {
 }
 
 @keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: black;
-    }
+	to {
+		background-color: #ffffff;
+		color: black;
+	}
 }
 
 #battery.warning:not(.charging) {
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+	color: white;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 #cpu {
@@ -83,7 +195,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #f53c3c;
+	background: #f53c3c;
 }
 
 #pulseaudio {
@@ -92,10 +204,8 @@ window#waybar {
 #pulseaudio.muted {
 }
 
-#custom-spotify {
-    color: rgb(102, 220, 105);
-}
-
 #tray {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 999em;
 }
-
+*/

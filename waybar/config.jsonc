@@ -1,0 +1,241 @@
+{
+	"layer": "top",
+	"position": "top",
+	"spacing": 3,
+
+	"modules-left": ["hyprland/workspaces", "mpris"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": [
+		"backlight",
+		"network",
+		"pulseaudio",
+		"battery",
+		"clock#time",
+		"custom/power",
+	],
+
+	"backlight": {
+		"format": "{icon} {percent}% ",
+		"format-icons": ["󰃞 ", "󰃟 ", "󰃠 "],
+		"on-scroll-up": "brightnessctl set 5%+ > /dev/null",
+		"on-scroll-down": "brightnessctl set 5%- > /dev/null",
+	},
+
+	"battery": {
+		"format": "{icon} {capacity}% ",
+		"format-charging": "󰂄 {capacity}% ",
+		"format-plugged": "󰂄 {capacity}% ",
+		"format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰁹"],
+		"tooltip-format": "{time}",
+	},
+
+	"clock#time": {
+		"interval": 1,
+		"format": " {:%H:%M} ",
+		"tooltip-format": "{:%A, %d.%m.%Y}",
+	},
+
+	"clock#date": {
+		"interval": 10,
+		"format": " {:%d.%m.}",
+		"tooltip-format": "{:%A, %d.%m.%Y}",
+	},
+
+	"hyprland/window": {
+		"separate-outputs": true,
+		"icon": true,
+		"icon-size": 16,
+	},
+
+	"mpris": {
+		"format": " 󰎈 {title} • {artist}",
+	},
+
+	"network": {
+		"format-wifi": "󰖩 {essid} ",
+		"format-ethernet": "󰈀 {ifname} ",
+		"format-linked": " {ifname} ",
+		"format-disconnected": "󰖪 disconnected ",
+	},
+
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": false,
+		"format": "{icon}",
+		"format-icons": {
+			"1": "",
+			"2": " ",
+			"3": " ",
+			"4": " ",
+			"5:music": "",
+			"6:docs": "",
+			"urgent": "",
+			"focused": "",
+			"default": " ",
+		},
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+		},
+	},
+
+	"custom/power": {
+		"format": " ",
+		"on-click": "wlogout -sb 2",
+	},
+
+	"pulseaudio": {
+		"format": "{icon}{volume}% ",
+		"format-muted": "󰖁 {volume}% ",
+		"format-bluetooth": "󰂯 {icon} {volume}% ",
+		"format-bluetooth-muted": "󰂯 󰖁 {volume}% ",
+		"scroll-step": 5,
+		"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "wpctl set-mute @DEFAULT_SINK@ 1",
+		"on-click-middle": "pavucontrol",
+		"format-icons": {
+			"default": ["󰖀", "󰕾", "󰕾"],
+		},
+	},
+}
+
+/*
+{
+	"margin-bottom":1,
+	"layer":"top",
+	"position":"top",
+	"height":24,
+	"modules-left":[
+		"hyprland/workspaces",
+		"hyprland/mode",
+		"custom/spotify"
+	],
+	"modules-center":[
+		"custom/window"
+	],
+	"modules-right":[
+		"custom/nc",
+		"pulseaudio",
+		"network",
+		"cpu",
+		"memory",
+		"battery",
+		"tray",
+		"clock",
+		"custom/power"
+	],
+	"hyprland/workspaces":{
+		"disable-scroll":true,
+		"all-outputs":false,
+		"format":"{icon}",
+		"format-icons":{
+			"1":"",
+			"2":" ",
+			"3":" ",
+			"4":"",
+			"5:music":"",
+			"6:docs":"",
+			"urgent":"",
+			"focused":"",
+			"default":""
+		},
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+    },
+	},
+	"tray":{
+		"icon-size":21,
+		"spacing":10
+	},
+	"clock":{
+		"interval":60,
+		"format":"{:%H:%M}",
+		"tooltip-format":"{:%Y-%m-%d}",
+		"max-length":25
+	},
+	"cpu":{
+		"format":"{usage}% "
+	},
+	"memory":{
+		"format":"{}% "
+	},
+	"battery":{
+		"bat":"BAT0",
+		"states":{
+			"good":95,
+			"warning":30,
+			"critical":15
+		},
+		"format":"{capacity}% {icon} ",
+		"format-good":"{capacity}% {icon} ",
+		"format-full":"{capacity}% {icon} ",
+		"format-icons":[
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	"network":{
+		"interval": 5,
+		"interface":"wlan0",
+		"format-wifi":"{essid} ({signalStrength}%) ",
+		"format-ethernet":"{ifname}: {ipaddr}/{cidr} ",
+		"format-disconnected":"Disconnected ⚠",
+		"on-click":"iwgtk"
+	},
+	"pulseaudio":{
+		"scroll-step":1,
+		"format":"{volume}% {icon}",
+		"format-bluetooth":"{volume}% {icon}",
+		"format-muted":"",
+		"format-icons":{
+			"headphones":"",
+			"handsfree":"",
+			"headset":"",
+			"phone":"",
+			"portable":"",
+			"car":"",
+			"default":[
+				"",
+				""
+			]
+		},
+		"on-click":"pavucontrol"
+	},
+	"custom/window":{
+		"exec":"$HOME/.config/waybar/getTitle.sh 2> /dev/null",
+		"interval":1,
+		"format":"{}"
+	},
+	"custom/power":{
+		"format":"",
+		"on-click":"wlogout -sb 2"
+	},
+	"custom/nc":{
+		"tooltip":false,
+		"format":"{icon}",
+		"format-icons":{
+			"notification":"󱅫",
+			"none":"",
+			"dnd-notification":"",
+			"dnd-none":"󰂛",
+			"inhibited-notification":"",
+			"inhibited-none":"",
+			"dnd-inhibited-notification":"",
+			"dnd-inhibited-none":""
+		},
+		"return-type":"json",
+		"exec-if":"which swaync-client",
+		"exec":"swaync-client -swb",
+		"on-click":"sleep 0.1 && swaync-client -t -sw",
+		"on-click-right":"sleep 0.1 && swaync-client -d -sw",
+		"escape":true
+	}
+}*/
