@@ -11,6 +11,7 @@
 		"pulseaudio",
 		"battery",
 		"clock#time",
+		"tray",
 		"custom/power",
 	],
 
@@ -57,7 +58,10 @@
 		"format-linked": " {ifname} ",
 		"format-disconnected": "󰖪 disconnected ",
 	},
-
+	"tray": {
+		"icon-size": 21,
+		"spacing": 10,
+	},
 	"hyprland/workspaces": {
 		"disable-scroll": true,
 		"all-outputs": false,
@@ -82,7 +86,7 @@
 	},
 
 	"custom/power": {
-		"format": " ",
+		"format": "  ",
 		"on-click": "wlogout -sb 2",
 	},
 
