@@ -4,7 +4,7 @@
 	"spacing": 3,
 
 	"modules-left": ["hyprland/workspaces", "mpris"],
-	"modules-center": ["hyprland/window"],
+	"modules-center": [],
 	"modules-right": [
 		"backlight",
 		"network",
@@ -42,12 +42,6 @@
 		"tooltip-format": "{:%A, %d.%m.%Y}",
 	},
 
-	"hyprland/window": {
-		"separate-outputs": true,
-		"icon": true,
-		"icon-size": 16,
-	},
-
 	"mpris": {
 		"format": " 󰎈 {title} • {artist}",
 	},
@@ -59,8 +53,8 @@
 		"format-disconnected": "󰖪 disconnected ",
 	},
 	"tray": {
-		"icon-size": 21,
-		"spacing": 10,
+		"icon-size": 17,
+		"spacing": 5,
 	},
 	"hyprland/workspaces": {
 		"disable-scroll": true,

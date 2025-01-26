@@ -1,5 +1,5 @@
 @define-color fg #ebdbb2;
-@define-color bg #1d2021;
+@define-color bg rgba(0, 0, 0, 0.4);
 
 @define-color black #282828;
 @define-color red #cc241d;
@@ -14,6 +14,7 @@
 	all: unset;
 	font-family: FiraCode Nerd Font;
 	font-size: 15px;
+	min-height: 25px;
 }
 
 .modules-left {
@@ -31,7 +32,6 @@
 
 .modules-center {
 	color: @fg;
-	background-color: rgba(0, 0, 0, 0.3);
 	font-weight: 500;
 	margin: 0 8px;
 	padding: 0 10px;
@@ -93,6 +93,10 @@ tooltip {
 
 #workspaces button:hover {
 	color: @yellow;
+}
+
+#tray {
+	padding: 2px;
 }
 
 /*
