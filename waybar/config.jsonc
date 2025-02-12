@@ -6,6 +6,7 @@
 	"modules-left": ["hyprland/workspaces", "mpris"],
 	"modules-center": [],
 	"modules-right": [
+		"custom/nc",
 		"backlight",
 		"network",
 		"pulseaudio",
@@ -51,6 +52,7 @@
 		"format-ethernet": "󰈀 {ifname} ",
 		"format-linked": " {ifname} ",
 		"format-disconnected": "󰖪 disconnected ",
+		"on-click": "iwgtk"
 	},
 	"tray": {
 		"icon-size": 17,
@@ -83,15 +85,35 @@
 		"format": "  ",
 		"on-click": "wlogout -sb 2",
 	},
+	"custom/nc":{
+		"tooltip":false,
+		"format":"{icon}  ",
+		"format-icons":{
+			"notification":"󱅫",
+			"none":"",
+			"dnd-notification":"",
+			"dnd-none":"󰂛",
+			"inhibited-notification":"",
+			"inhibited-none":"",
+			"dnd-inhibited-notification":"",
+			"dnd-inhibited-none":""
+		},
+		"return-type":"json",
+		"exec-if":"which swaync-client",
+		"exec":"swaync-client -swb",
+		"on-click":"sleep 0.1 && swaync-client -t -sw",
+		"on-click-right":"sleep 0.1 && swaync-client -d -sw",
+		"escape":true
+	},
 
 	"pulseaudio": {
-		"format": "{icon}{volume}% ",
+		"format": "{icon} {volume}% ",
 		"format-muted": "󰖁 {volume}% ",
 		"format-bluetooth": "󰂯 {icon} {volume}% ",
 		"format-bluetooth-muted": "󰂯 󰖁 {volume}% ",
 		"scroll-step": 5,
 		"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
-		"on-click-right": "wpctl set-mute @DEFAULT_SINK@ 1",
+		"on-click-right": "pavucontrol",
 		"on-click-middle": "pavucontrol",
 		"format-icons": {
 			"default": ["󰖀", "󰕾", "󰕾"],
