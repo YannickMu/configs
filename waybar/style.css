@@ -99,6 +99,10 @@ tooltip {
 	padding: 2px;
 }
 
+#tray menu {
+	background-color: rgba(0,0,0,0.9);
+}
+
 /*
 * {
 	border: none;
