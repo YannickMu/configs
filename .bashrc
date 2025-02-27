@@ -24,9 +24,9 @@ alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lah'
 alias lzd='sudo lazydocker'
 alias docker='sudo docker'
-alias cls='clear && fastfetch --raw ~/Bilder/FastFetch/image.bin --color green'
 
 # Autostart
+export PATH="/home/smuely/.local/bin:$PATH"
 cls
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
