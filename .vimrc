@@ -25,25 +25,26 @@ autocmd BufRead *.asm silent! set filetype=nasm
 
 "Colors
 colorscheme elflord
-hi Normal ctermbg=235
+hi Normal ctermbg=233
 hi VertSplit ctermbg=None
 hi EndOfBuffer ctermbg=None
 hi EndOfBuffer ctermfg=236
 hi Number ctermfg=13
-hi LineNr ctermfg=5
+hi LineNr ctermfg=198
 hi Keyword ctermfg=3
 hi StatusLine ctermbg=232
 hi vimCommand ctermfg=32
 hi Include ctermfg=1
 hi Conditional ctermfg=1
-hi Todo ctermbg=220
-hi String ctermfg=28
+hi Todo ctermbg=199 ctermfg=16
+hi Statement ctermfg=161
+hi String ctermfg=46
 hi CursorColumn ctermbg=59
 hi CursorColumn ctermfg=46
 hi Comment ctermfg=245 cterm=Italic
 hi SpecialKey ctermfg=245
 hi NonText ctermfg=245
-hi Function ctermfg=199
+hi Function ctermfg=226
 hi Special ctermfg=91
 
 hi TabLineFill ctermbg=235 ctermfg=197
@@ -54,7 +55,7 @@ autocmd Syntax * syntax match CustFunc /\(.*\)\@<=\w\+\((\)\@=/
 autocmd Syntax * syntax match CustMethod /\(\.\)\@<=\w\+\((\)\@=/
 autocmd Syntax * syntax match CustBr /[(){}]/
 
-hi CustFunc ctermfg=199
+hi CustFunc ctermfg=226
 hi CustMethod ctermfg=92
 hi CustBr ctermfg=172
 
@@ -130,6 +131,11 @@ function FloatTerm()
 	let g:hidden = 1
 endfunction
 
+function FloatTermInit()
+	let g:buf = term_start('bash -c exit', #{hidden: 1, term_finish: "close"})
+	let g:hidden = 1
+endfunction
+
 function Toggle()
 	if term_getstatus(g:buf) != "running"
 		let g:buf = term_start('bash', #{hidden: 1, term_finish: "close"})
@@ -144,6 +150,6 @@ function Toggle()
 	endif
 endfunction
 
+call FloatTermInit()
 
-call FloatTerm()
 
