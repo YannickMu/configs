@@ -19,6 +19,31 @@ else
 	alias cls='clear'
 fi
 
+# LS_COLORS
+# color .swp -files light grey
+LS_COLORS="${LS_COLORS}*.swp=38\:5\:240:"
+# color .o % .swp -files light grey
+LS_COLORS="${LS_COLORS}*.o=38\:5\:240:"
+# color config files yellow
+confColor="38\:5\:229"
+LS_COLORS="${LS_COLORS}\
+*.yml=${confColor}:\
+*.cfg=${confColor}:\
+*.conf=${confColor}:\
+*.json=${confColor}:\
+*.gitignore=${confColor}:"
+unset confColor
+# possible secrets
+secColor="38\:5\:46"
+LS_COLORS="${LS_COLORS}\
+*.env=${secColor}:\
+*.secret=${secColor}:\
+*.pwd=${secColor}:\
+*.token=${secColor}:"
+unset secColor
+
+export LS_COLORS
+
 # Aliases
 alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lah'
