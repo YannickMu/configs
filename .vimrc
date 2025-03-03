@@ -23,6 +23,8 @@ set tabline=%!MyTabLine()
 autocmd BufRead *.asm silent! set syntax=nasm
 autocmd BufRead *.asm silent! set filetype=nasm
 
+set directory=./
+
 "Colors
 colorscheme elflord
 hi Normal ctermbg=233
