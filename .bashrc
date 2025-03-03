@@ -24,6 +24,8 @@ fi
 LS_COLORS="${LS_COLORS}*.swp=38\:5\:240:"
 # color .o % .swp -files light grey
 LS_COLORS="${LS_COLORS}*.o=38\:5\:240:"
+# color .funny files pink
+LS_COLORS="${LS_COLORS}*.funny=38\:5\:200:"
 # color config files yellow
 confColor="38\:5\:229"
 LS_COLORS="${LS_COLORS}\
