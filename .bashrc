@@ -5,14 +5,14 @@ export LC_TIME="de_CH.UTF-8"
 export LC_TELEPHONE="de_CH.UTF-8"
 export LC_MEASUREMENT="de_CH.UTF-8"
 
-alias cls='clear && fastfetch --raw ~/Bilder/FastFetch/image.bin --color green'
+alias cls='clear && fastfetch --raw ~/Bilder/FastFetch/ArchLogoWithoutBackground.bin -c /usr/share/fastfetch/presets/examples/13.jsonc'
 echo "IDE view? (y/n)"
 read inp
 
 if [[ $inp == "n" ]]
 then
 	PS1="\[\033[38;5;197m\]╭─\[\033[30;48;5;197m\] \w \[\033[38;5;197;40m\]  \d \[\033[30;48;5;197m\]  \t \[\033[38;5;197;40m\] ?? \$? \[\033[0;30;5;197m\]\n\[\033[38;5;197m\]╰─ \[\033[0m\]"
-	alias cls='clear && fastfetch --raw ~/Bilder/FastFetch/image.bin --color green'
+	alias cls='clear && fastfetch --raw ~/Bilder/FastFetch/ArchLogoWithoutBackground.bin -c /usr/share/fastfetch/presets/examples/13.jsonc'
 else
 	clear
 	export PS1="\033[38;5;197m\033[48;5;197;30m  .../\W \033[0m\033[38;5;197m \033[0m"
