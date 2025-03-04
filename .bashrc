@@ -33,7 +33,8 @@ LS_COLORS="${LS_COLORS}\
 *.cfg=${confColor}:\
 *.conf=${confColor}:\
 *.json=${confColor}:\
-*.gitignore=${confColor}:"
+*.gitignore=${confColor}:\
+*.toml=${confColor}:"
 unset confColor
 # possible secrets
 secColor="38\:5\:46"
