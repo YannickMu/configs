@@ -45,6 +45,8 @@
 
 	"mpris": {
 		"format": " 󰎈 {title} • {artist}",
+		"artist-len": 20,
+		"title-len": 15,
 	},
 
 	"network": {
