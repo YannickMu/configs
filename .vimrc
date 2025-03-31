@@ -77,6 +77,10 @@ inoremap <c-x> <esc>:wq<CR>
 tmap <c-p> <c-w>:call Toggle()<CR>
 nmap <c-p> :call Toggle()<CR>
 
+" move line with ctrl + up/down
+noremap <c-UP> :m -2<CR>
+noremap <c-DOWN> :m +1<CR>
+
 "Statusline
 set statusline=%#SL_FileType#\ %Y%#SL_Inset#%#SL_Inset#\ %f\ %#SL_Inset#%#SL_FileType#\ %{&encoding}%#SL_Upset#%=%#SL_Inset#%#SL_Inset#\ %L\ %#SL_Inset#%#SL_Inset#\ %c\ %#SL_Inset#%#SL_Inset#\ chr:\ 0x%B\ %#SL_Inset#%#SL_Inset#\ %{&ff=='unix'?'\ LF\ ':'CRLF'}\ %#SL_Inset#%#SL_FileType#\ %{&modified?'+':'\ '}\ 
 set laststatus=2
