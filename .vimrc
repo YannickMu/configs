@@ -91,43 +91,50 @@ hi SL_Inset ctermbg=235 ctermfg=197
 
 
 "Tabline
-function MyTabLine()
-	let s = ''
-	for i in range(tabpagenr('$'))
-		" select the highlighting
-		if i + 1 == tabpagenr()
-			let s ..= '%#TabLineSel#'
-		else
-			let s ..= '%#TabLine#'
-		endif
+def CustTabline(): string
+        var tabline = '   '
+        #loop through each tab page
+        for i in range(tabpagenr('$'))
+                if i + 1 == tabpagenr()
+                        tabline ..= '%#SL_Inset#%#TabLineSel#'
+                else
+                        tabline ..= '%#TabLine#  '
+                endif
 
-		" set the tab page number (for mouse clicks)
-		let s ..= '%' .. (i + 1) .. 'T'
+                tabline ..= '%' .. (i + 1) .. 'T'   #set the tab page number (for mouse clicks)
 
-		" the label is made by MyTabLabel()
-		if i + 1 == tabpagenr()
-			let s ..= '%{MyTabLabel(' .. (i + 1) .. ')}'
-		else
-			let s ..= ' %{MyTabLabel(' .. (i + 1) .. ')} '
-		endif
-	endfor
+                var n = ''                                #temp str for buf names
+                var m = 0                                          #modified counter
+                m = 0
+                for b in tabpagebuflist(i + 1)
+                        if bufname(b) == ''
+                                n ..= '[NEW]'
+                        else
+                                n ..= fnamemodify(bufname(b), ':t')
+                        endif
+                        n ..= '  '
+                        if getbufvar(b, "&modified") && getbufvar(b, "&buftype") != "terminal"
+                                m += 1
+                        endif
+                endfor
 
-	" after the last tab fill with TabLineFill and reset tab page nr
-	let s ..= '%#TabLineFill#%T'
+                if m > 1
+                        tabline ..= m .. '󱠡 '
+                elseif m > 0
+                        tabline ..= '󱠡 '
+                endif
 
-	" right-align the label to close the current tab page
-	if tabpagenr('$') > 1
-		let s ..= '%=%#TabLine#%999XX '
-	endif
-
-	return s
-endfunction
-
-function MyTabLabel(n)
-	let buflist = tabpagebuflist(a:n)
-	let winnr = tabpagewinnr(a:n)
-	return fnamemodify(bufname(buflist[winnr - 1]), ':t')
-endfunction
+                n = substitute(n, '  $', '', '')   #remove last and
+                tabline ..= n
+                if i + 1 == tabpagenr()
+                        tabline ..= '%#SL_Diag#'
+                else
+                        tabline ..= '  '
+                endif
+        endfor
+        tabline ..= '%#TabLineFill#%T'
+        return tabline
+enddef
 
 " Float Term
 hi FloatTerm ctermbg=235
