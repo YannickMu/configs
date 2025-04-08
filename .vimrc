@@ -19,7 +19,7 @@ set cursorline
 set t_Co=256
 set list
 set showtabline=2
-set tabline=%!MyTabLine()
+set tabline=%!CustTabline()
 autocmd BufRead *.asm silent! set syntax=nasm
 autocmd BufRead *.asm silent! set filetype=nasm
 
@@ -82,7 +82,7 @@ noremap <c-UP> :m -2<CR>
 noremap <c-DOWN> :m +1<CR>
 
 "Statusline
-set statusline=%#SL_FileType#\ %Y%#SL_Inset#%#SL_Inset#\ %f\ %#SL_Inset#%#SL_FileType#\ %{&encoding}%#SL_Upset#%=%#SL_Inset#%#SL_Inset#\ %L\ %#SL_Inset#%#SL_Inset#\ %c\ %#SL_Inset#%#SL_Inset#\ chr:\ 0x%B\ %#SL_Inset#%#SL_Inset#\ %{&ff=='unix'?'\ LF\ ':'CRLF'}\ %#SL_Inset#%#SL_FileType#\ %{&modified?'+':'\ '}\ 
+set statusline=%#SL_FileType#\ %Y%#SL_Inset#%#SL_Inset#\ %f\ %#SL_Inset#%#SL_FileType#\ %{&encoding}%#SL_Upset#%=%#SL_Inset#%#SL_Inset#\ %L\ %#SL_Inset#%#SL_Inset#\ %c\ %#SL_Inset#%#SL_Inset#\ chr:\ 0x%B\ %#SL_Inset#%#SL_Inset#\ %{&ff=='unix'?'\ LF\ ':'CRLF'}\ %#SL_Inset#%#SL_FileType#\ %{&modified?'󱠡':'\ '}\ 
 set laststatus=2
 
 hi SL_FileType ctermbg=197 ctermfg=0
@@ -92,7 +92,7 @@ hi SL_Inset ctermbg=235 ctermfg=197
 
 "Tabline
 def CustTabline(): string
-        var tabline = '   '
+        var tabline = ' '
         #loop through each tab page
         for i in range(tabpagenr('$'))
                 if i + 1 == tabpagenr()
