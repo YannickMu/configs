@@ -15,7 +15,7 @@ then
 	alias cls='clear && fastfetch --raw ~/Bilder/FastFetch/ArchLogoWithoutBackground.bin -c /usr/share/fastfetch/presets/examples/13.jsonc'
 else
 	clear
-	export PS1="\033[38;5;197m\033[48;5;197;30m  .../\W \033[0m\033[38;5;197m \033[0m"
+	export PS1="\[\033[38;5;197m\]\[\033[48;5;197;30m\]  .../\W \[\033[0m\]\[\033[38;5;197m\] \[\033[0m\]"
 	alias cls='clear'
 fi
 
