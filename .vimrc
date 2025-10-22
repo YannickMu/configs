@@ -62,6 +62,7 @@ autocmd Syntax * syntax match CustBr /[(){}]/
 hi CustFunc ctermfg=226
 hi CustMethod ctermfg=92
 hi CustBr ctermfg=172
+hi MatchParen cterm=bold ctermfg=199 ctermbg=None
 
 hi StatusLine ctermfg=5 ctermbg=None
 hi StatusLineNC ctermfg=5 ctermbg=None
