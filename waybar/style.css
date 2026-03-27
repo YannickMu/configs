@@ -12,7 +12,7 @@
 
 * {
 	all: unset;
-	font-family: FiraCode Nerd Font;
+	font-family: "FiraCode Nerd Font";
 	font-size: 15px;
 	min-height: 25px;
 }

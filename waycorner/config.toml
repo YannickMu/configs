@@ -1,0 +1,6 @@
+[main-monitor]
+command = [ "/home/smuely/.config/hypr/lock.sh" ]
+size = 1
+margin = 2
+locations = ["top_left"]
+color = "#FF0000FF"
