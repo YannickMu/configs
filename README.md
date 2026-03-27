@@ -7,11 +7,11 @@ My personal configs...
 - iwgtk
 - waybar
 - hyprland
-- hyprpaper
+- awww
 - hyprlock
 - kitty
 - grim
 - slurp
-- thunar
-- zed
+- fastfetch
+- waycorner
 - FiraCode Nerd Font
