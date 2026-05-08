@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 alias ls='eza --icons=auto'
-alias cls='clear && fastfetch --raw ~/Bilder/FastFetch/ArchLogoWithoutBackground.bin -c /usr/share/fastfetch/presets/examples/13.jsonc'
+alias cls='clear && fastfetch -l small -c /usr/share/fastfetch/presets/examples/13.jsonc'
 alias cat='bat'
 alias ll='ls -lah'
 alias lzd='sudo lazydocker'
